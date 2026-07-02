@@ -55,7 +55,8 @@ body {
   background-attachment: fixed;
   color: var(--text-main);
   position: relative;
-  margin: 10px 30vh;
+  margin: 0;
+  padding: 10px 24px;
 }
 
 h1 {
@@ -88,6 +89,12 @@ padding-top: 40px;
   margin-right: auto;
 }
 
+.container li {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .container h1,
 .container h2 {
@@ -97,6 +104,14 @@ padding-top: 40px;
 }
 
 #problem {
+  padding-top: 40px;
+}
+
+#process {
+  padding-top: 40px;
+}
+
+#deliverables {
   padding-top: 40px;
 }
 
@@ -170,4 +185,46 @@ padding-top: 40px;
         0 0 5px rgba(255, 247, 236, 0.9),
         0 0 12px rgba(255, 240, 214, 0.65),
         0 0 20px rgba(255, 232, 196, 0.35);
+}
+
+/* ------------------------------
+   Case Study Images
+------------------------------ */
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  margin: 48px auto;
+  outline: 3px solid var(--accent);
+}
+
+.image-pair {
+  max-width: 900px;
+  margin: 48px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.image-pair img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
+}
+
+/* ------------------------------
+   Columns
+------------------------------ */
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 650px;
+  margin: 10px auto;
 }
