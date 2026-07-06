@@ -73,6 +73,10 @@ text-align: center;
 padding-top: 40px;
 }
 
+a:link {
+  color: #6E3F44;
+}
+
 .container {
   background-color: rgba(183, 110, 121, 0.45);
   padding: 50px 40px 40px;
@@ -112,6 +116,14 @@ padding-top: 40px;
 }
 
 #deliverables {
+  padding-top: 40px;
+}
+
+#summary {
+  padding-top: 40px;
+}
+
+#resources {
   padding-top: 40px;
 }
 
