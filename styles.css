@@ -77,6 +77,18 @@ a:link {
   color: #6E3F44;
 }
 
+blockquote {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:1rem;
+  border-left: 3px solid rgb(83, 27, 36); /* Accent color */
+  font-size: 12pt;
+  font-family: fraunces;
+  line-height: 1.6;
+  font-style: italic;
+}
+
 .container {
   background-color: rgba(183, 110, 121, 0.45);
   padding: 50px 40px 40px;
@@ -91,6 +103,8 @@ a:link {
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 12pt;
+  line-height: 1.4;
 }
 
 .container li {
@@ -239,4 +253,61 @@ img {
   width: 100%;
   max-width: 650px;
   margin: 10px auto;
+}
+
+/* ------------------------------
+   Tablet
+------------------------------ */
+
+@media (max-width: 900px) {
+  .top-nav {
+    width: 100%;
+  }
+
+  .top-nav ul {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .top-nav .brand,
+  .top-nav li {
+    text-align: center;
+  }
+
+  .hero {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .feature-links {
+    gap: 1.25rem;
+  }
+}
+
+/* ------------------------------
+   Mobile
+------------------------------ */
+
+@media (max-width: 768px) {
+  .site-shell {
+    padding: 0.35rem;
+  }
+
+  .top-nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    position: relative;
+    gap: 0.75rem 1rem;
+  }
+
+  .top-nav-wrap,
+  .top-nav {
+  position: relative;
+  z-index: 1000;
+}
+
+  .brand {
+    font-size: 1.3rem;
+  }
 }
