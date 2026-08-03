@@ -176,6 +176,10 @@ blockquote {
   flex-shrink: 0;
 }
 
+.top-nav .brand {
+  color: var(--text-main);
+}
+
 .nav-links {
   list-style: none;
   display: flex;
