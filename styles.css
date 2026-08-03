@@ -73,7 +73,8 @@ text-align: center;
 padding-top: 40px;
 }
 
-a:link {
+.container a:link,
+.container a:visited {
   color: #6E3F44;
 }
 
